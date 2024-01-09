@@ -9,6 +9,7 @@ This paper presents an in-depth investigation into the high-performance parallel
 IN Linux Environment:
 
 gcc -fopenmp -o executable_name source_code.c
+
 ./executable_name
 
 ### 1. Introduction
