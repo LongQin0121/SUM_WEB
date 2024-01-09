@@ -5,6 +5,11 @@
 
 This paper presents an in-depth investigation into the high-performance parallel optimization of the Fish School Behaviour (FSB) algorithm on the Setonix supercomputing platform using the OpenMP framework. The FSB algorithm, inspired by nature's social behavior patterns, provides an ideal platform for parallelization due to its iterative and computationally intensive nature. The study leverages the capabilities of the Setonix platform and the OpenMP framework to analyze various aspects of multi-threading, aiming to discern patterns and strategies that can elevate program performance.
 
+### How to run  the code?
+IN Linux Environment
+gcc -fopenmp -o executable_name source_code.c
+./executable_name
+
 ### 1. Introduction
 
 #### 1.1 Background
