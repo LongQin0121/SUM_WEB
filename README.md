@@ -51,9 +51,6 @@ This experiment centers on three different constructs—Reduction Construct, Cri
 
 Key findings regarding the impact of thread count, choice of scheduling strategy, and construct selection are summarized. Practical application value and future prospects for research in parallel computing are discussed.
 
-### 5. Future Prospects
-
-The study looks forward to delving deeper into other factors potentially affecting algorithm performance, such as cache behavior and thread scheduling strategies. Additionally, exploring other parallel frameworks and techniques is planned to provide more comprehensive optimization strategies.
 
 ### References
 
@@ -73,7 +70,7 @@ The study looks forward to delving deeper into other factors potentially affecti
 
 [Include code for reduction.c]
 
-### static_dynamicGuided.c
+### static_dynami_cGuided.c
 
 [Include code for static_dynamicGuided.c]
 
