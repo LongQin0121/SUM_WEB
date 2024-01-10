@@ -67,17 +67,11 @@ Key findings regarding the impact of thread count, choice of scheduling strategy
 
 ### critical1.c
 
-[Include code for critical1.c]
-
 ### critical2.c
-
-[Include code for critical2.c]
 
 ### reduction.c
 
-[Include code for reduction.c]
+### static_dynamic_guided.c
 
-### static_dynami_cGuided.c
 
-[Include code for static_dynamicGuided.c]
 
