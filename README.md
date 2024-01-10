@@ -8,9 +8,9 @@ This paper presents an in-depth investigation into the high-performance parallel
 ### How to run  the code?
 In Linux Environment:
 
-gcc -fopenmp -o executable_name source_code.c
+###gcc -fopenmp -o executable_name source_code.c
 
-./executable_name
+###./executable_name
 
 ### 1. Introduction
 
@@ -59,11 +59,7 @@ This experiment centers on three different constructs—Reduction Construct, Cri
 Key findings regarding the impact of thread count, choice of scheduling strategy, and construct selection are summarized. Practical application value and future prospects for research in parallel computing are discussed.
 
 
-### References
-
-[Include relevant references]
-
-## Code Samples
+## Code
 
 ### critical1.c
 
