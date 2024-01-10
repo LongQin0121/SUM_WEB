@@ -1,6 +1,6 @@
 ---
-title: "Project1- CITS5507 - Fish School Behavior"
-author: "Long Qin(23829101)  Haitian Wang(23815631)"
+title: "Fish School Behavior"
+author: "Long Qin"
 date: "2023-09-25"
 output: html_document
 ---
