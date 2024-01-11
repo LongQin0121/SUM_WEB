@@ -42,15 +42,40 @@ Utilizing the OpenMP parallel computing paradigm, critical independent variables
 
 The configuration for the experimental environment, including operating system information, kernel version, and compiler version, is provided.
 
-#### 3.2 Experiment 1: Influence of Thread Count on Program Runtime
+### 3.2.1 Reduction Construct vs. Critical Construct with Static Scheduling
 
-This experiment investigates the variation in program runtime under different thread counts, particularly with constant scheduling strategies and parallel structures. The impact of Reduction Construct vs. Critical Construct with Static Scheduling and Static vs. Dynamic vs. Guided with Reduction Structure is analyzed.
+Our analysis focused on the impact of Reduction Construct and Critical Construct on runtime under static scheduling. Results indicate that, with an increasing thread count, programs using Reduction Construct generally exhibited shorter runtimes than those with Critical Construct. This efficiency advantage of Reduction Construct became more pronounced at medium thread counts (e.g., 64 or 128), although the gap reduced at higher thread counts. Critical Construct's runtime remained constant with increasing thread counts, exhibiting a linear growth up to 100 threads and then a decrease, reaching a minimal value at 800 threads.
 
-#### 3.3 Experiment 2: Influence of Scheduling Strategy on Program Runtime
+![Figure 1: Runtime vs. Threads by Construct](images/Fig1.png)
 
-This section examines the impact of varying scheduling strategies and chunk values on program runtime, keeping thread count and parallel constructs constant. Analysis of the scheduling strategy's impact on runtime is presented.
+### 3.2.2 Static vs. Dynamic vs. Guided with Reduction Structure
 
-#### 3.4 Experiment 3: Influence of Constructs on Program Runtime
+Examining three scheduling strategies (static, dynamic, and guided) with Reduction Construct, dynamic and guided strategies consistently outperformed static, especially beyond 20 threads. Below 20 threads, runtime differences were marginal, but dynamic and guided strategies improved performance by up to 50% with higher thread counts.
+
+![Figure 2: Runtime vs. Threads (Static vs. Dynamic vs. Guided)](images/Fig2_3.png)
+
+
+### 3.3.1 Analysis of Scheduling Strategy's Impact on Runtime
+
+The impact of different scheduling strategies on the execution time of the Reduction Construct at various thread counts was considered. Dynamic and guided strategies consistently performed better than static, with minimal runtime fluctuations.
+
+![Figure 4: Performance Time vs. Chunk by Threads and Schedule](images/Fig4.png)
+
+### 3.4 Experiment 3: Influence of Constructs on Program Runtime
+
+This experiment focused on three constructs—Reduction Construct, Critical Partial Construct, and Critical Construct. The Reduction Construct consistently yielded optimal performance regardless of thread count settings, demonstrating efficiency amplification with increased usage in the program.
+
+#### 3.3.2 Analysis of Constructs' Impact on Runtime
+
+Comparing the runtime of the "eat" module section using Reduction Construct and Critical Partial Construct, Reduction Construct excelled in runtime, exhibiting thread count independence, while Critical Partial Construct showed an increase-then-decrease trend.
+
+![Figure 5: Comparison of Reduction vs. Critical Sections](images/Fig5.png)
+
+#### 3.3.3 Overall Comparison of Constructs
+
+When comparing overall program runtime using Reduction Construct, Critical Partial Construct, and Critical Construct, Reduction Construct consistently outperformed, demonstrating optimal performance across various thread counts.
+
+![Figure 6: Comparison of Reduction vs. Critical Section](images/Fig6.png)
 
 This experiment centers on three different constructs—Reduction Construct, Critical Partial Construct, and Critical Construct—and their influence on program runtime, given other variables remain constant. Detailed analysis and conclusions based on experimental data are provided.
 
