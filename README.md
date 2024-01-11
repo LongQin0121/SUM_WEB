@@ -82,7 +82,9 @@ When comparing overall program runtime using Reduction Construct, Critical Parti
 
 This experiment centers on three different constructs—Reduction Construct, Critical Partial Construct, and Critical Construct—and their influence on program runtime, given other variables remain constant. Detailed analysis and conclusions based on experimental data are provided.
 
-## Key findings regarding the impact of thread count, choice of scheduling strategy, and construct selection are summarized.  You can look through the  details in the Thesis.pdf
+## Key findings regarding the impact of thread count, choice of scheduling strategy, and construct selection are summarized.  
+##<span style="color:red;">You can look through the details in the Thesis.pdf</span>
+
 
 
 ## Code
