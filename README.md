@@ -8,9 +8,9 @@ This paper presents an in-depth investigation into the high-performance parallel
 ### How to compile and run the code?
 In Linux Environment:
 
-#### gcc -fopenmp -o executable_name source_code.c
+### gcc -fopenmp -o executable_name source_code.c
 
-#### ./executable_name
+### ./executable_name
 
 ### 1. Introduction
 
@@ -65,23 +65,24 @@ The impact of different scheduling strategies on the execution time of the Reduc
 
 This experiment focused on three constructs—Reduction Construct, Critical Partial Construct, and Critical Construct. The Reduction Construct consistently yielded optimal performance regardless of thread count settings, demonstrating efficiency amplification with increased usage in the program.
 
-#### 3.3.2 Analysis of Constructs' Impact on Runtime
+#### 3.4.1 Analysis of Constructs' Impact on Runtime
 
 Comparing the runtime of the "eat" module section using Reduction Construct and Critical Partial Construct, Reduction Construct excelled in runtime, exhibiting thread count independence, while Critical Partial Construct showed an increase-then-decrease trend.
 
 ![Figure 5: Comparison of Reduction vs. Critical Sections](images/Fig5.png)
-
-#### 3.3.3 Overall Comparison of Constructs
-
-When comparing overall program runtime using Reduction Construct, Critical Partial Construct, and Critical Construct, Reduction Construct consistently outperformed, demonstrating optimal performance across various thread counts.
-
+Subsequently, as depicted in Figure 6, we compared the overall program runtime using the Reduction 
+Construct, Critical Partial Construct, and Critical Construct. The outcomes underscored that the 
+Reduction Construct consistently yielded optimal performance regardless of thread count settings, with 
+efficiency amplifying the more it was utilized in the  program
 ![Figure 6: Comparison of Reduction vs. Critical Section](images/Fig6.png)
+
+
+### 4. Conclusion
+When comparing overall program runtime using Reduction Construct, Critical Partial Construct, and Critical Construct, Reduction Construct consistently outperformed, demonstrating optimal performance across various thread counts.
 
 This experiment centers on three different constructs—Reduction Construct, Critical Partial Construct, and Critical Construct—and their influence on program runtime, given other variables remain constant. Detailed analysis and conclusions based on experimental data are provided.
 
-### 4. Conclusion
-
-Key findings regarding the impact of thread count, choice of scheduling strategy, and construct selection are summarized. Practical application value and future prospects for research in parallel computing are discussed.
+## Key findings regarding the impact of thread count, choice of scheduling strategy, and construct selection are summarized.  You can look through the  details in the Thesis.pdf
 
 
 ## Code
